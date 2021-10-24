@@ -1,12 +1,12 @@
 {
   "name": "postgrase",
   "version": "1.0.0",
-  "description": "",
+  "description": "Build Node.js Rest APIs with Express & PostgresSQL",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "run": "nodemon server.js"
   },
-  "author": "",
+  "author": "Shubham Gupta",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
