@@ -1,7 +1,7 @@
 {
-  "name": "postgrase",
+  "name": "Node.js Rest APIs",
   "version": "1.0.0",
-  "description": "Build Node.js Rest APIs with Express & PostgresSQL",
+  "description": "Node.js Rest APIs with Express & PostgresSQL",
   "main": "index.js",
   "scripts": {
     "run": "nodemon server.js"

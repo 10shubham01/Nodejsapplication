@@ -5,12 +5,22 @@ app.get("/", (req, res) => {
   res.send({
     Project: "Node.js Rest APIs with Express & PostgresSQL",
     APIs: {
-      Get_all_customers: ["Get", "http://localhost:3000/customer/"],
-      Get_customer_by_id: ["Get", "http://localhost:3000/customer/id"],
-      Add_Customer: ["Post", "http://localhost:3000/customer/"],
-      Update_customer_by_id: ["Put", "http://localhost:3000/customer/id"],
-      Delete_customer_by_id: ["Delete", "http://localhost:3000/customer/id"],
-      Delete_all_customers: ["Delete", "http://localhost:3000/customer/"],
+      Get_all_customers: [
+        `Get", "http://localhost:${process.env.PORT}/customer/`,
+      ],
+      Get_customer_by_id: [
+        `Get", "http://localhost:${process.env.PORT}/customer/id`,
+      ],
+      Add_Customer: [`Post", "http://localhost:${process.env.PORT}/customer/`],
+      Update_customer_by_id: [
+        `Put", "http://localhost:${process.env.PORT}/customer/id`,
+      ],
+      Delete_customer_by_id: [
+        `Delete", "http://localhost:${process.env.PORT}/customer/id`,
+      ],
+      Delete_all_customers: [
+        `Delete", "http://localhost:${process.env.PORT}/customer/`,
+      ],
     },
     run: "nodemon server.js",
     dependencies: {
